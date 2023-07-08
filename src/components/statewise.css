@@ -1,0 +1,11 @@
+.table tr td:hover{
+    background-color: rgb(231, 81, 81);
+}
+.tableBody:hover{
+    background: rgb(145, 128, 128);;
+
+}
+.table thead tr th{
+    background-color: rgb(97, 89, 89);
+    color: rgb(250, 247, 241);
+}
