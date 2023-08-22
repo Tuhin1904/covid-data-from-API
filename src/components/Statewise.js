@@ -27,11 +27,11 @@ const Statewise=()=>{
             
             <div className='container-fluid mt-5'>
                 <div className='main-heading'>
-                    <h1 className='mb-5 text-center'><span className='fw-bold'>India</span> COVID 19 updates</h1>
+                    <h1 className='mb-5 text-center'><span className='fw-bold'>India</span> COVID 19 updates from API</h1>
                 </div>
 
                 <div className='table-responsive'>
-                    <table className='table table-hover'>
+                    <table className='table table-hover' id="totaltable">
                         <thead className='thead-dark tHead'>  
                             <tr>
                                 <th>State</th> 
@@ -49,9 +49,9 @@ const Statewise=()=>{
                                         <tr key={ind}>
                                             <td>{currE.state}</td>
                                             <td>{currE.confirmed}</td>
-                                            <td>{currE.recovered}</td>
-                                            <td>{currE.deaths}</td>
-                                            <td>{currE.active}</td>
+                                            <td id='recovered'>{currE.recovered}</td>
+                                            <td id="deaths">{currE.deaths}</td>
+                                            <td id="active">{currE.active}</td>
                                             <td>{currE.lastupdatedtime}</td>
                                         </tr>
                                     )
